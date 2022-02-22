@@ -64,6 +64,7 @@ const Enter: NextPage = () => {
               name="email"
               label="Email address"
               type="email"
+              required
             />
           ) : null}
           {method === "phone" ? (
@@ -75,6 +76,7 @@ const Enter: NextPage = () => {
               label="Phone number"
               type="number"
               kind="phone"
+              required
             />
           ) : null}
           {method === "email" ? <Button text={"Get login link"} /> : null}
